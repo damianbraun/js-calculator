@@ -1,0 +1,70 @@
+$deer: #be7c4d
+$deer-l: #C3875D
+$deer-d: #AD7146
+
+$sangria: #92140c
+$sangria-l: #9B2922
+$sangria-d: #85130B
+
+$jet: #353238
+$jet-l: #47444A
+$jet-d: #312E33
+
+$cedar: #be5a38
+$cedar-l: #C3694A
+$cedar-d: #AD5233
+
+$silverpink: #c1b4ae
+
+body
+  background-color: $silverpink
+  padding-bottom: 20px
+
+.calculator
+  color: $jet
+  font-size: 28px
+  width: auto
+  padding: 15px
+  margin: 5px
+  max-width: 212px
+
+
+td
+  padding: 5px
+  margin: 10px
+
+
+  &.btn
+    text-align: center
+    width: 30px
+    height: 30px
+    border-radius: 10px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+  &.btn-spe
+    border-bottom: 2px solid $jet
+    background-color: $deer
+    &:hover
+      background-color: $deer-l
+      border-color: $jet-l
+    &:active
+      background-color: $deer-d
+      border-color: $jet-d
+
+  &.btn-reg
+    border-bottom: 2px solid $sangria
+    background-color: $cedar
+    &:hover
+      background-color: $cedar-l
+      border-color: $sangria-l
+    &:active
+      background-color: $cedar-d
+      border-color: $sangria-d
+
+  &.display
+    background-color: $jet
+    color: $silverpink
+    border-radius: 5px
